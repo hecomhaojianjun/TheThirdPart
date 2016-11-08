@@ -15,19 +15,48 @@ TheThirdPart 集成了AutoLayer、Base64、BlockUI、DynamicDelegate、htmlparse
   s.requires_arc = true
   s.frameworks = 'UIKit'
   s.ios.deployment_target = '7.0'
-  s..default_subspec = 'Core'
-  s.subspec 'Core' do |core|
-  core.dependency 'TheThirdPart/AutoLayer'
-  core.dependency 'TheThirdPart/Base64'
-  core.dependency 'TheThirdPart/BlockUI'
-  core.dependency 'TheThirdPart/Manager'
-  core.dependency 'TheThirdPart/DynamicDelegate'
-  core.dependency 'TheThirdPart/MailAndMessage'
-  core.dependency 'TheThirdPart/MJExtension'
-  core.dependency 'TheThirdPart/ParseXML'
-  core.dependency 'TheThirdPart/SafeTransition'
-  core.dependency 'TheThirdPart/Tar'
-  core.dependency 'TheThirdPart/TPKeyboardAvoidingScrollView'
-  core.dependency 'TheThirdPart/UIImage-Helpers'
+  s.subspec 'AutoLayer' do |ss|
+    ss.source_files = 'AutoLayer/*.{h,m}'
+    ss.public_header_files = 'AutoLayer/*.h'
+  end
+  s.subspec 'Base64' do |s1|
+    s1.source_files = 'Base64/*.{h,m}'
+    s1.public_header_files = 'Base64/*.h'
+  end
+  s.subspec 'BlockUI' do |s2|
+    s2.source_files = 'BlockUI/*.{h,m}'
+    s2.public_header_files = 'BlockUI/*.h'
+  end
+  s.subspec 'DynamicDelegate' do |s3|
+    s3.source_files = 'DynamicDelegate/*.{h,m}'
+    s3.public_header_files = 'DynamicDelegate/*.h'
+  end
+  s.subspec 'MailAndMessage' do |s1|
+    s1.source_files = 'MailAndMessage/*.{h,m}'
+    s1.public_header_files = 'MailAndMessage/*.h'
+  end
+  s.subspec 'MJExtension' do |s1|
+    s1.source_files = 'MJExtension/*.{h,m}'
+    s1.public_header_files = 'MJExtension/*.h'
+  end
+  s.subspec 'ParseXML' do |s1|
+    s1.source_files = 'ParseXML/*.{h,m}'
+    s1.public_header_files = 'ParseXML/*.h'
+  end
+  s.subspec 'SafeTransition' do |s1|
+    s1.source_files = 'SafeTransition/*.{h,m}'
+    s1.public_header_files = 'SafeTransition/*.h'
+  end
+  s.subspec 'Tar' do |s1|
+    s1.source_files = 'Tar/*.{h,m}'
+    s1.public_header_files = 'Tar/*.h'
+  end
+  s.subspec 'TPKeyboardAvoidingScrollView' do |s1|
+    s1.source_files = 'TPKeyboardAvoidingScrollView/*.{h,m}'
+    s1.public_header_files = 'TPKeyboardAvoidingScrollView/*.h'
+  end
+  s.subspec 'UIImage-Helpers' do |s1|
+    s1.source_files = 'UIImage-Helpers/*.{h,m}'
+    s1.public_header_files = 'UIImage-Helpers/*.h'
   end
 end
