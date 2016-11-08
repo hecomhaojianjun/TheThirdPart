@@ -15,4 +15,19 @@ TheThirdPart 集成了AutoLayer、Base64、BlockUI、DynamicDelegate、htmlparse
   s.requires_arc = true
   s.frameworks = 'UIKit'
   s.ios.deployment_target = '7.0'
+  s..default_subspec = 'Core'
+  s.subspec 'Core' do |core|
+  core.dependency 'TheThirdPart/AutoLayer'
+  core.dependency 'TheThirdPart/Base64'
+  core.dependency 'TheThirdPart/BlockUI'
+  core.dependency 'TheThirdPart/Manager'
+  core.dependency 'TheThirdPart/DynamicDelegate'
+  core.dependency 'TheThirdPart/MailAndMessage'
+  core.dependency 'TheThirdPart/MJExtension'
+  core.dependency 'TheThirdPart/ParseXML'
+  core.dependency 'TheThirdPart/SafeTransition'
+  core.dependency 'TheThirdPart/Tar'
+  core.dependency 'TheThirdPart/TPKeyboardAvoidingScrollView'
+  core.dependency 'TheThirdPart/UIImage-Helpers'
+  end
 end
