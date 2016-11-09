@@ -11,7 +11,6 @@ TheThirdPart 集成了AutoLayer、Base64、BlockUI、DynamicDelegate、htmlparse
   s.author       = { "hecomhaojianjun" => "haojianjun@hecom.cn" }
   s.source       = { :git => 'https://github.com/hecomhaojianjun/TheThirdPart.git', :tag => '1.0.0' }
   s.requires_arc = true
-  s.frameworks = 'UIKit'
   s.ios.deployment_target = '7.0'
   s.subspec 'AutoLayer' do |ss|
     ss.source_files = 'AutoLayer/*.{h,m}'
@@ -21,9 +20,10 @@ TheThirdPart 集成了AutoLayer、Base64、BlockUI、DynamicDelegate、htmlparse
     s1.source_files = 'Base64/*.{h,m}'
     s1.public_header_files = 'Base64/*.h'
   end
-  s.subspec 'BlockUI' do |s2|
-    s2.source_files = 'BlockUI/*.{h,m}'
-    s2.public_header_files = 'BlockUI/*.h'
+  s.subspec 'BlockUI' do |ss|
+    ss.source_files = 'BlockUI/*.{h,m}'
+    ss.public_header_files = 'BlockUI/*.h'
+    ss.frameworks = 'UIKit'
   end
   s.subspec 'DynamicDelegate' do |s3|
     s3.source_files = 'DynamicDelegate/*.{h,m}'
@@ -56,5 +56,9 @@ TheThirdPart 集成了AutoLayer、Base64、BlockUI、DynamicDelegate、htmlparse
   s.subspec 'UIImage-Helpers' do |s1|
     s1.source_files = 'UIImage-Helpers/*.{h,m}'
     s1.public_header_files = 'UIImage-Helpers/*.h'
+  end
+  s.subspec 'HYActivityView' do |ss|
+    ss.source_files = 'HYActivityView/*.{h,m}'
+    ss.public_header_files = 'HYActivityView/*.h'
   end
 end
