@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.platform = :ios
   s.name         = "TheThirdPart"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Objective C and swift class."
   s.description  = <<-DESC
 TheThirdPart 集成了AutoLayer、Base64、BlockUI、DynamicDelegate、htmlparser、HYActivityView等私有的第三方库.
@@ -9,7 +9,7 @@ TheThirdPart 集成了AutoLayer、Base64、BlockUI、DynamicDelegate、htmlparse
   s.homepage     = "https://github.com/hecomhaojianjun/TheThirdPart"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "hecomhaojianjun" => "haojianjun@hecom.cn" }
-  s.source       = { :git => 'https://github.com/hecomhaojianjun/TheThirdPart.git', :tag => '1.0.0' }
+  s.source       = { :git => 'https://github.com/hecomhaojianjun/TheThirdPart.git', :tag => '1.0.1' }
   s.requires_arc = true
   s.ios.deployment_target = '7.0'
   s.subspec 'AutoLayer' do |ss|
